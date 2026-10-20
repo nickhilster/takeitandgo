@@ -22,10 +22,13 @@ npm run smoke
 - `data/picks.json` is the editorial source of truth. Every project has a person-written description, rationale, audience, and quickstart.
 - `data/discovery.json` defines the GitHub topic searches, thresholds, and license allowlist.
 - `data/discovery-candidates.json` contains sourced research leads. Discovery never adds a project to `picks.json`; a person must review and approve every new pick.
-- `data/observed.json` records material changes observed for curated repositories. Verification keeps prior records on API failures and commits only material changes, avoiding daily timestamp-only churn.
-- Daily GitHub Actions use public-repository standard runners. No paid LLM or external search service is used. Runs can also be started from the Actions tab with `workflow_dispatch`.
+- `data/observed.json` records material changes for curated repositories and separately lists current verification failures. Verification preserves prior records on API failures and writes a bounded report only when tracked data changes.
+- GitHub Actions use public-repository standard runners. Discovery runs daily at 08:17 UTC, repository verification at 08:43 UTC, and production health every six hours. No paid LLM or external search service is used; workflows can be manually dispatched.
 - Candidate discovery checks repository status, activity, stars, an allowlisted SPDX license, and README presence. It never checks out or executes candidate code.
 - Candidate reports keep source links and factual metadata, not upstream repository description text. Asset and dependency licensing is documented in [`THIRD-PARTY-NOTICES.md`](THIRD-PARTY-NOTICES.md).
+- Discovery refreshes candidate facts each run and preserves each candidate's first `discovered_at` date. Its stable automation branch changes only the candidate report; editorial picks are never changed automatically.
+- CI validates data, regression behavior, pinned workflow actions and permissions, dependency security audit, workflow syntax, production build, and built-page smoke checks. The health workflow checks HTTP availability and expected content, then updates one issue labelled `production-health` for repeated failures.
+- Workflows use explicit minimum permissions, SHA-pinned actions, bounded timeouts, and concurrency groups. `CODEOWNERS` assigns review ownership to the repository owner. Inspect Actions logs and automation PR diffs before accepting updates; manually rerun after correcting a failure cause.
 - GitHub metadata in the page is fetched at build time and can be absent if the GitHub API is unavailable. It is not browser-refreshed. The public page explains the curation and verification method and displays the last material verification date when available.
 
 Repository submissions can be proposed as issues or pull requests. Submissions and candidate reports are not endorsements. Do not include secrets or private data in an issue.
@@ -36,7 +39,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the review rules. Keep editorial copy
 
 ## Deployment boundary
 
-The current Vercel project `takeitandgo` and `takeitandgo.teambotics.app` domain are retained. After this repository is provisioned and its build is verified, connect the existing Vercel project to this repository with root directory `./`; deploy a preview and verify it before changing production. See [`docs/production-migration.md`](docs/production-migration.md). No production cutover is performed by GitHub Actions.
+The existing Vercel project `takeitandgo` and `takeitandgo.teambotics.app` domain are retained. Connect it to this repository with root directory `./`, verify a preview, and deploy production through the documented operator procedure. See [`docs/production-migration.md`](docs/production-migration.md). GitHub Actions never deploy to production.
 
 ## License
 

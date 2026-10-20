@@ -5,6 +5,13 @@ import { fileURLToPath } from 'node:url';
 export const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const readJson = (relativePath) => JSON.parse(fs.readFileSync(path.join(root, relativePath), 'utf8'));
 export const writeJson = (relativePath, value) => fs.writeFileSync(path.join(root, relativePath), `${JSON.stringify(value, null, 2)}\n`);
+export const writeJsonIfChanged = (relativePath, value) => {
+  const next = `${JSON.stringify(value, null, 2)}\n`;
+  const target = path.join(root, relativePath);
+  if (fs.existsSync(target) && fs.readFileSync(target, 'utf8') === next) return false;
+  fs.writeFileSync(target, next);
+  return true;
+};
 export const picks = readJson('data/picks.json');
 export const discovery = readJson('data/discovery.json');
 const cachePath = path.join(root, '.cache/github-api-cache.json');
@@ -21,7 +28,9 @@ export function repoSlug(url) {
 export async function github(pathname, token = process.env.GITHUB_TOKEN) {
   const cached = apiCache[pathname];
   for (let attempt = 0; attempt < 3; attempt++) {
-    const response = await fetch(`https://api.github.com${pathname}`, {
+    let response;
+    try {
+      response = await fetch(`https://api.github.com${pathname}`, {
       headers: {
         Accept: 'application/vnd.github+json',
         'X-GitHub-Api-Version': '2022-11-28',
@@ -29,8 +38,13 @@ export async function github(pathname, token = process.env.GITHUB_TOKEN) {
         ...(token ? { Authorization: `Bearer ${token}` } : {}),
         ...(cached?.etag ? { 'If-None-Match': cached.etag } : {}),
       },
-      signal: AbortSignal.timeout(15000),
-    });
+        signal: AbortSignal.timeout(15000),
+      });
+    } catch (error) {
+      if (attempt === 2) throw new Error(`GitHub API request failed for ${pathname}: ${error.message}`);
+      await new Promise((resolve) => setTimeout(resolve, 500 * (2 ** attempt)));
+      continue;
+    }
     if (response.status === 304 && cached) return cached.body;
     if (response.ok) {
       const body = await response.json();
@@ -40,10 +54,10 @@ export async function github(pathname, token = process.env.GITHUB_TOKEN) {
       return body;
     }
     const retryAfter = Number(response.headers.get('retry-after'));
-    const rateLimited = response.status === 429 || (response.status === 403 && response.headers.get('x-ratelimit-remaining') === '0');
-    if (rateLimited && attempt < 2) {
+    const rateLimited = response.status === 429 || response.status === 403 && (response.headers.get('x-ratelimit-remaining') === '0' || response.headers.get('retry-after'));
+    if ((rateLimited || response.status >= 500) && attempt < 2) {
       const resetSeconds = Number(response.headers.get('x-ratelimit-reset')) - Math.floor(Date.now() / 1000);
-      const delayMs = Math.min(30_000, Math.max(1000, retryAfter ? retryAfter * 1000 : resetSeconds * 1000));
+      const delayMs = Math.min(30_000, Math.max(1000, retryAfter ? retryAfter * 1000 : Number.isFinite(resetSeconds) && resetSeconds > 0 ? resetSeconds * 1000 : 1000 * (2 ** attempt)));
       await new Promise((resolve) => setTimeout(resolve, delayMs));
       continue;
     }

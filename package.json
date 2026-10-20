@@ -13,10 +13,17 @@
     "vercel:deploy:prod": "vercel deploy --prod",
     "validate": "node scripts/validate-data.mjs",
     "smoke": "node scripts/smoke.mjs",
+    "test": "node scripts/data-regression.mjs",
+    "workflows:check": "node scripts/workflow-check.mjs",
+    "audit": "npm audit --audit-level=high",
+    "health:check": "node scripts/health-check.mjs",
     "discover": "node scripts/discover.mjs",
     "verify:repositories": "node scripts/verify.mjs"
   },
   "dependencies": {
     "astro": "^7.4.1"
+  },
+  "devDependencies": {
+    "yaml": "^2.9.1"
   }
 }

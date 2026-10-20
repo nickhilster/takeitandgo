@@ -1,13 +1,19 @@
-# Production migration checklist
+# Production deployment and rollback
 
-This checklist is a proposal for the repository extraction. It does not authorize or perform the production cutover.
+The existing Vercel project and custom domain are retained. Production deployments are operator-initiated; GitHub Actions do not hold Vercel credentials or promote deployments.
 
-1. Create the public `nickhilster/takeitandgo` repository after reviewing its source files and choosing a license.
-2. Copy the `takeitandgo/` subtree to the new repository root, preserving history if practical. Do not delete the original subtree.
-3. Confirm GitHub Actions workflows are visible; run CI and dispatch discovery and verification manually. Review permissions and artifacts.
-4. Verify the extracted project with `npm ci`, `npm run validate`, `npm run build`, and `npm run smoke`; inspect the preview site and its links/interactions.
-5. Verify the existing Vercel project settings, Git authorization, root directory, build command/output, environment, and protection settings. Keep the existing project and domain.
-6. Connect the existing Vercel project to the new repository only after preview verification. Deploy a preview, inspect it, then make the production change with a rollback path to the old repository.
-7. Verify production URL, TLS, forms, search/filter/card interactions, and a successful deployment. Keep the old source subtree until a separately reviewed PR after the rollback window.
+1. Record the current production deployment ID and confirm the custom domain is attached, verified, and serving valid TLS.
+2. In Vercel project settings, verify Git provider access, select `nickhilster/takeitandgo`, set production branch `main` and root `./`, and confirm build/output settings. Keep the existing project, environment variables, and domain.
+3. Build a preview from the verified commit and test desktop/mobile layout, theme, category/search filters, card disclosures, outbound links, submission email flow, methodology, and verification dates.
+4. Deploy the verified `main` revision to production from the existing project. Verify the custom URL, TLS, page content, interactions, redirects, and assets.
+5. If checks fail, use Vercel Deployments → the recorded prior READY production deployment → Promote to Production. Verify the custom domain returns the previous working site, then fix forward through a new preview.
+6. Keep the original website subtree until a separately reviewed cleanup after the rollback window.
 
-No Vercel project IDs, tokens, or environment values belong in this repository.
+## Maintenance ownership and recovery
+
+- Repository owner: `@nickhilster` (see `CODEOWNERS`).
+- Discovery: daily at 08:17 UTC; stable branch `automation/discovery-candidates`; factual candidate report only. Candidates never become editorial picks automatically.
+- Verification: daily at 08:43 UTC; stable branch `automation/repository-verification-report`; preserves last-known-good records and lists failures separately.
+- Production health: every six hours, checking HTTP status and expected page markers; one open issue with label `production-health` is updated for repeated failures.
+- Workflows require only GitHub `contents`, `pull-requests`, or `issues` permissions as declared. Third-party actions are pinned by commit SHA; jobs have timeouts and concurrency controls.
+- Recovery: inspect the failed run and source URLs; correct transient/data issues, then manually dispatch the workflow. Review automation PRs before merging. For a production regression, promote the previous READY deployment using step 5.

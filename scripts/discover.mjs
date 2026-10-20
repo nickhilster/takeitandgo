@@ -1,5 +1,5 @@
 import fs from 'node:fs';
-import { discovery, github, picks, readJson, repoSlug, root, writeJson } from './data.mjs';
+import { discovery, github, picks, readJson, repoSlug, root, writeJsonIfChanged } from './data.mjs';
 
 const known = new Set(picks.map((pick) => repoSlug(pick.repo).toLowerCase()));
 const existingPath = `${root}/data/discovery-candidates.json`;
@@ -47,7 +47,6 @@ for (let start = 0; start < viable.length; start += 4) {
     try {
       await github(`/repos/${repo.full_name}/readme`);
       const previous = priorByRepo.get(repo.full_name.toLowerCase());
-      if (previous) return previous;
       return {
         name: repo.name,
         category,
@@ -68,13 +67,13 @@ for (let start = 0; start < viable.length; start += 4) {
 }
 
 candidates.sort((a, b) => a.category.localeCompare(b.category) || b.stars - a.stars || a.repo.localeCompare(b.repo));
-if (candidates.length === 0) {
-  console.log('No new useful candidates; leaving the report unchanged.');
+if (candidates.length === 0 && prior.candidates.length > 0) {
+  console.log('No eligible candidates returned; preserving the last successful report.');
   process.exit(0);
 }
-writeJson('data/discovery-candidates.json', {
+const updated = writeJsonIfChanged('data/discovery-candidates.json', {
   schema_version: 1,
   methodology: 'GitHub Search API topic queries; exclude curated entries, forks, archived or disabled repositories, projects below the star/activity thresholds, repositories without an allowlisted SPDX license, and repositories without a README. Candidate records are research leads and are never auto-added to editorial picks.',
   candidates,
 });
-console.log(`Wrote ${candidates.length} sourced candidates for human review.`);
+console.log(updated ? `Wrote ${candidates.length} refreshed sourced candidates for human review.` : 'Candidate report is unchanged; no update needed.');
