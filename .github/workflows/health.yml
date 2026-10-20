@@ -1,0 +1,51 @@
+name: Production health check
+
+on:
+  schedule:
+    - cron: '13 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: production-health
+  cancel-in-progress: false
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: 22
+      - name: Check production availability and page content
+        id: check
+        run: node scripts/health-check.mjs
+        env:
+          HEALTHCHECK_URL: https://takeitandgo.teambotics.app/
+      - name: Open or update one health alert
+        if: failure() && steps.check.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          CHECK_OUTPUT: ${{ steps.check.outcome }}
+        run: |
+          existing=$(gh issue list --state open --label production-health --json number,title --jq '.[] | select(.title == "Production health check failing") | .number' | head -n1)
+          printf -v body 'Production returned an error or did not contain the expected Take It and Go page content.\n\nRun: %s\nResult: %s\n\nRe-run the Production health check workflow, inspect the deployment and run logs, then close this issue after recovery is confirmed.' "$RUN_URL" "$CHECK_OUTPUT"
+          gh label create production-health --description "Production health monitoring alert" --color D93F0B 2>/dev/null || true
+          if [ -n "$existing" ]; then
+            gh issue edit "$existing" --body "$body"
+          else
+            gh issue create --title "Production health check failing" --label production-health --body "$body"
+          fi
+      - name: Close the health alert after recovery
+        if: success() && steps.check.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          existing=$(gh issue list --state open --label production-health --json number,title --jq '.[] | select(.title == "Production health check failing") | .number' | head -n1)
+          if [ -n "$existing" ]; then gh issue close "$existing" --comment "Production health check recovered: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"; fi
