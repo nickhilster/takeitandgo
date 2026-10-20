@@ -2,12 +2,14 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 
 const html = fs.readFileSync(new URL('../dist/index.html', import.meta.url), 'utf8');
+const stylesheets = [...html.matchAll(/href="([^\"]+\.css)"/g)].map((match) => fs.readFileSync(new URL(`../dist${match[1]}`, import.meta.url), 'utf8')).join('\n');
 for (const text of ['ripgrep', 'Who it\'s for', 'Quickstart', 'Related picks', 'GitHub topic searches']) {
   assert.ok(html.includes(text), `built page is missing expected content: ${text}`);
 }
 assert.match(html, /<main\b/);
 assert.match(html, /<header\b/);
 assert.match(html, /<footer\b/);
+assert.match(stylesheets, /\.project-card\[hidden\]\s*\{\s*display:\s*none\s*\}/, 'filtered project cards must be removed from the grid layout');
 const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map((match) => match[1]);
 assert.equal(new Set(ids).size, ids.length, 'built page contains duplicate IDs');
 const idSet = new Set(ids);
