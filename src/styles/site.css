@@ -479,6 +479,10 @@ h3 {
   gap: var(--space-3);
 }
 
+.project-card[hidden] {
+  display: none;
+}
+
 .project-card:hover,
 .project-card:focus-within,
 .note-card:hover,
