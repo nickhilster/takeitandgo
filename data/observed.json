@@ -7,12 +7,12 @@
       "html_url": "https://github.com/BurntSushi/ripgrep",
       "archived": false,
       "disabled": false,
-      "stars": 69269,
-      "open_issues": 219,
-      "pushed_at": "2026-08-04T13:59:44Z",
+      "stars": 69388,
+      "open_issues": 207,
+      "pushed_at": "2026-10-23T20:00:21Z",
       "license": "Unlicense",
       "default_branch": "master",
-      "last_verified": "2026-10-20T13:44:35.993Z"
+      "last_verified": "2026-10-24T08:50:10.793Z"
     },
     "junegunn/fzf": {
       "name": "junegunn/fzf",
@@ -20,12 +20,12 @@
       "html_url": "https://github.com/junegunn/fzf",
       "archived": false,
       "disabled": false,
-      "stars": 83689,
+      "stars": 83750,
       "open_issues": 334,
-      "pushed_at": "2026-10-17T02:11:02Z",
+      "pushed_at": "2026-10-21T23:26:22Z",
       "license": "MIT",
       "default_branch": "master",
-      "last_verified": "2026-10-20T13:44:36.498Z"
+      "last_verified": "2026-10-24T08:50:11.019Z"
     },
     "bigskysoftware/htmx": {
       "name": "bigskysoftware/htmx",
@@ -33,12 +33,12 @@
       "html_url": "https://github.com/bigskysoftware/htmx",
       "archived": false,
       "disabled": false,
-      "stars": 49578,
-      "open_issues": 302,
-      "pushed_at": "2026-10-20T10:49:49Z",
+      "stars": 49569,
+      "open_issues": 304,
+      "pushed_at": "2026-10-22T09:16:13Z",
       "license": "NOASSERTION",
       "default_branch": "master",
-      "last_verified": "2026-10-20T13:44:36.909Z"
+      "last_verified": "2026-10-24T08:50:11.270Z"
     },
     "colinhacks/zod": {
       "name": "colinhacks/zod",
@@ -46,12 +46,12 @@
       "html_url": "https://github.com/colinhacks/zod",
       "archived": false,
       "disabled": false,
-      "stars": 44162,
-      "open_issues": 93,
+      "stars": 44184,
+      "open_issues": 100,
       "pushed_at": "2026-10-19T22:46:10Z",
       "license": "MIT",
       "default_branch": "main",
-      "last_verified": "2026-10-20T13:44:37.213Z"
+      "last_verified": "2026-10-24T08:50:11.447Z"
     },
     "withastro/astro": {
       "name": "withastro/astro",
@@ -59,12 +59,12 @@
       "html_url": "https://github.com/withastro/astro",
       "archived": false,
       "disabled": false,
-      "stars": 63345,
+      "stars": 63426,
       "open_issues": 115,
-      "pushed_at": "2026-10-20T13:15:13Z",
+      "pushed_at": "2026-10-24T06:03:36Z",
       "license": "NOASSERTION",
       "default_branch": "main",
-      "last_verified": "2026-10-20T13:44:37.624Z"
+      "last_verified": "2026-10-24T08:50:11.681Z"
     },
     "microsoft/playwright": {
       "name": "microsoft/playwright",
@@ -72,12 +72,12 @@
       "html_url": "https://github.com/microsoft/playwright",
       "archived": false,
       "disabled": false,
-      "stars": 98142,
-      "open_issues": 180,
-      "pushed_at": "2026-10-20T02:59:45Z",
+      "stars": 98399,
+      "open_issues": 195,
+      "pushed_at": "2026-10-24T00:18:04Z",
       "license": "Apache-2.0",
       "default_branch": "main",
-      "last_verified": "2026-10-20T13:44:38.026Z"
+      "last_verified": "2026-10-24T08:50:11.898Z"
     },
     "duckdb/duckdb": {
       "name": "duckdb/duckdb",
@@ -85,12 +85,12 @@
       "html_url": "https://github.com/duckdb/duckdb",
       "archived": false,
       "disabled": false,
-      "stars": 42294,
-      "open_issues": 900,
-      "pushed_at": "2026-10-20T13:29:02Z",
+      "stars": 42478,
+      "open_issues": 1018,
+      "pushed_at": "2026-10-23T19:39:03Z",
       "license": "MIT",
       "default_branch": "main",
-      "last_verified": "2026-10-20T13:44:38.443Z"
+      "last_verified": "2026-10-24T08:50:12.095Z"
     },
     "meilisearch/meilisearch": {
       "name": "meilisearch/meilisearch",
@@ -98,12 +98,12 @@
       "html_url": "https://github.com/meilisearch/meilisearch",
       "archived": false,
       "disabled": false,
-      "stars": 59617,
-      "open_issues": 320,
-      "pushed_at": "2026-10-20T09:36:44Z",
+      "stars": 59644,
+      "open_issues": 319,
+      "pushed_at": "2026-10-23T14:46:02Z",
       "license": "NOASSERTION",
       "default_branch": "main",
-      "last_verified": "2026-10-20T13:44:38.752Z"
+      "last_verified": "2026-10-24T08:50:12.317Z"
     },
     "caddyserver/caddy": {
       "name": "caddyserver/caddy",
@@ -111,12 +111,12 @@
       "html_url": "https://github.com/caddyserver/caddy",
       "archived": false,
       "disabled": false,
-      "stars": 78183,
-      "open_issues": 292,
-      "pushed_at": "2026-10-20T07:11:31Z",
+      "stars": 78335,
+      "open_issues": 294,
+      "pushed_at": "2026-10-23T22:58:28Z",
       "license": "Apache-2.0",
       "default_branch": "master",
-      "last_verified": "2026-10-20T13:44:39.058Z"
+      "last_verified": "2026-10-24T08:50:12.545Z"
     },
     "louislam/uptime-kuma": {
       "name": "louislam/uptime-kuma",
@@ -124,12 +124,12 @@
       "html_url": "https://github.com/louislam/uptime-kuma",
       "archived": false,
       "disabled": false,
-      "stars": 92666,
-      "open_issues": 846,
-      "pushed_at": "2026-10-20T12:15:53Z",
+      "stars": 92816,
+      "open_issues": 860,
+      "pushed_at": "2026-10-24T06:47:55Z",
       "license": "MIT",
       "default_branch": "master",
-      "last_verified": "2026-10-20T13:44:39.290Z"
+      "last_verified": "2026-10-24T08:50:12.734Z"
     },
     "excalidraw/excalidraw": {
       "name": "excalidraw/excalidraw",
@@ -137,12 +137,12 @@
       "html_url": "https://github.com/excalidraw/excalidraw",
       "archived": false,
       "disabled": false,
-      "stars": 134253,
-      "open_issues": 3356,
-      "pushed_at": "2026-10-20T10:12:20Z",
+      "stars": 134462,
+      "open_issues": 3409,
+      "pushed_at": "2026-10-23T15:10:12Z",
       "license": "MIT",
       "default_branch": "master",
-      "last_verified": "2026-10-20T13:44:39.672Z"
+      "last_verified": "2026-10-24T08:50:12.924Z"
     },
     "biomejs/biome": {
       "name": "biomejs/biome",
@@ -150,12 +150,13 @@
       "html_url": "https://github.com/biomejs/biome",
       "archived": false,
       "disabled": false,
-      "stars": 25981,
-      "open_issues": 470,
-      "pushed_at": "2026-10-20T13:03:47Z",
+      "stars": 25987,
+      "open_issues": 535,
+      "pushed_at": "2026-10-24T08:49:02Z",
       "license": "Apache-2.0",
       "default_branch": "main",
-      "last_verified": "2026-10-20T13:44:39.990Z"
+      "last_verified": "2026-10-24T08:50:13.132Z"
     }
-  }
+  },
+  "failures": {}
 }
