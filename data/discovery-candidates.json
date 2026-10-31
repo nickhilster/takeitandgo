@@ -1,556 +1,556 @@
 {
   "schema_version": 1,
-  "methodology": "GitHub Search API topic queries; exclude curated entries, forks, archived or disabled repositories, projects below the star/activity thresholds, repositories without an allowlisted SPDX license, and repositories without a README. Candidate records include sourced metadata, not upstream prose; they are research leads and are never auto-added to editorial picks.",
+  "methodology": "GitHub Search API topic queries; exclude curated entries, forks, archived or disabled repositories, projects below the star/activity thresholds, repositories without an allowlisted SPDX license, and repositories without a README. Candidate records are research leads and are never auto-added to editorial picks.",
   "candidates": [
     {
       "name": "ui-ux-pro-max-skill",
       "category": "CLI",
       "repo": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 137842,
+      "stars": 143227,
       "language": "Python",
       "license": "MIT",
-      "pushed_at": "2026-10-15T02:04:34Z",
+      "pushed_at": "2026-10-30T19:08:34Z",
       "source": "https://api.github.com/repos/nextlevelbuilder/ui-ux-pro-max-skill",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "terminal",
       "category": "CLI",
       "repo": "https://github.com/microsoft/terminal",
-      "stars": 105196,
+      "stars": 105296,
       "language": "C++",
       "license": "MIT",
-      "pushed_at": "2026-10-20T03:06:50Z",
+      "pushed_at": "2026-10-31T03:04:33Z",
       "source": "https://api.github.com/repos/microsoft/terminal",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "bat",
       "category": "CLI",
       "repo": "https://github.com/sharkdp/bat",
-      "stars": 60858,
+      "stars": 60991,
       "language": "Rust",
       "license": "Apache-2.0",
-      "pushed_at": "2026-10-17T11:57:57Z",
+      "pushed_at": "2026-10-29T19:45:31Z",
       "source": "https://api.github.com/repos/sharkdp/bat",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "PowerShell",
       "category": "CLI",
       "repo": "https://github.com/PowerShell/PowerShell",
-      "stars": 55865,
+      "stars": 55973,
       "language": "C#",
       "license": "MIT",
-      "pushed_at": "2026-10-19T23:22:24Z",
+      "pushed_at": "2026-10-30T23:22:11Z",
       "source": "https://api.github.com/repos/PowerShell/PowerShell",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "aider",
       "category": "CLI",
       "repo": "https://github.com/Aider-AI/aider",
-      "stars": 49662,
+      "stars": 49846,
       "language": "Python",
       "license": "Apache-2.0",
       "pushed_at": "2026-05-22T14:02:20Z",
       "source": "https://api.github.com/repos/Aider-AI/aider",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "fd",
       "category": "CLI",
       "repo": "https://github.com/sharkdp/fd",
-      "stars": 44808,
+      "stars": 44915,
       "language": "Rust",
       "license": "Apache-2.0",
-      "pushed_at": "2026-10-20T07:45:47Z",
+      "pushed_at": "2026-10-30T07:33:38Z",
       "source": "https://api.github.com/repos/sharkdp/fd",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "cobra",
       "category": "CLI",
       "repo": "https://github.com/spf13/cobra",
-      "stars": 44709,
+      "stars": 44731,
       "language": "Go",
       "license": "Apache-2.0",
       "pushed_at": "2026-07-11T00:43:07Z",
       "source": "https://api.github.com/repos/spf13/cobra",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "yazi",
       "category": "CLI",
       "repo": "https://github.com/sxyazi/yazi",
-      "stars": 42942,
+      "stars": 43143,
       "language": "Rust",
       "license": "MIT",
-      "pushed_at": "2026-10-18T06:10:43Z",
+      "pushed_at": "2026-10-28T14:14:09Z",
       "source": "https://api.github.com/repos/sxyazi/yazi",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "supabase",
       "category": "Data",
       "repo": "https://github.com/supabase/supabase",
-      "stars": 112190,
+      "stars": 114377,
       "language": "TypeScript",
       "license": "Apache-2.0",
-      "pushed_at": "2026-10-20T13:46:26Z",
+      "pushed_at": "2026-10-31T11:44:38Z",
       "source": "https://api.github.com/repos/supabase/supabase",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "etcd",
       "category": "Data",
       "repo": "https://github.com/etcd-io/etcd",
-      "stars": 52404,
+      "stars": 52433,
       "language": "Go",
       "license": "Apache-2.0",
-      "pushed_at": "2026-10-19T17:37:00Z",
+      "pushed_at": "2026-10-28T18:53:57Z",
       "source": "https://api.github.com/repos/etcd-io/etcd",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "dbeaver",
       "category": "Data",
       "repo": "https://github.com/dbeaver/dbeaver",
-      "stars": 52147,
+      "stars": 52251,
       "language": "Java",
       "license": "Apache-2.0",
-      "pushed_at": "2026-10-20T13:11:38Z",
+      "pushed_at": "2026-10-31T11:00:36Z",
       "source": "https://api.github.com/repos/dbeaver/dbeaver",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "ClickHouse",
       "category": "Data",
       "repo": "https://github.com/ClickHouse/ClickHouse",
-      "stars": 50498,
+      "stars": 50688,
       "language": "C++",
       "license": "Apache-2.0",
-      "pushed_at": "2026-10-20T13:45:54Z",
+      "pushed_at": "2026-10-31T12:28:35Z",
       "source": "https://api.github.com/repos/ClickHouse/ClickHouse",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "orm",
       "category": "Data",
       "repo": "https://github.com/prisma/orm",
-      "stars": 47700,
+      "stars": 47661,
       "language": "TypeScript",
       "license": "Apache-2.0",
-      "pushed_at": "2026-10-20T13:42:14Z",
+      "pushed_at": "2026-10-31T09:19:23Z",
       "source": "https://api.github.com/repos/prisma/orm",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "awesome-cheatsheets",
       "category": "Data",
       "repo": "https://github.com/LeCoupa/awesome-cheatsheets",
-      "stars": 46576,
+      "stars": 46600,
       "language": "JavaScript",
       "license": "MIT",
       "pushed_at": "2026-10-17T14:11:21Z",
       "source": "https://api.github.com/repos/LeCoupa/awesome-cheatsheets",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "tidb",
       "category": "Data",
       "repo": "https://github.com/pingcap/tidb",
-      "stars": 40660,
+      "stars": 40693,
       "language": "Go",
       "license": "Apache-2.0",
-      "pushed_at": "2026-10-20T10:36:15Z",
+      "pushed_at": "2026-10-31T05:58:25Z",
       "source": "https://api.github.com/repos/pingcap/tidb",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
+    },
+    {
+      "name": "impeccable",
+      "category": "Design",
+      "repo": "https://github.com/pbakaus/impeccable",
+      "stars": 97684,
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "pushed_at": "2026-10-31T11:56:18Z",
+      "source": "https://api.github.com/repos/pbakaus/impeccable",
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "penpot",
       "category": "Design",
       "repo": "https://github.com/penpot/penpot",
-      "stars": 61418,
+      "stars": 61909,
       "language": "Clojure",
       "license": "MPL-2.0",
-      "pushed_at": "2026-10-20T13:37:11Z",
+      "pushed_at": "2026-10-31T08:29:30Z",
       "source": "https://api.github.com/repos/penpot/penpot",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "bulma",
       "category": "Design",
       "repo": "https://github.com/jgthms/bulma",
-      "stars": 50038,
+      "stars": 50036,
       "language": "CSS",
       "license": "MIT",
       "pushed_at": "2026-09-21T09:56:34Z",
       "source": "https://api.github.com/repos/jgthms/bulma",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "materialize",
       "category": "Design",
       "repo": "https://github.com/Dogfalo/materialize",
-      "stars": 38784,
+      "stars": 38775,
       "language": "JavaScript",
       "license": "MIT",
       "pushed_at": "2026-08-20T13:49:11Z",
       "source": "https://api.github.com/repos/Dogfalo/materialize",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
+    },
+    {
+      "name": "huashu-design",
+      "category": "Design",
+      "repo": "https://github.com/alchaincyf/huashu-design",
+      "stars": 28274,
+      "language": "HTML",
+      "license": "MIT",
+      "pushed_at": "2026-10-30T17:51:13Z",
+      "source": "https://api.github.com/repos/alchaincyf/huashu-design",
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "Graphite",
       "category": "Design",
       "repo": "https://github.com/GraphiteEditor/Graphite",
-      "stars": 27656,
+      "stars": 27792,
       "language": "Rust",
       "license": "Apache-2.0",
-      "pushed_at": "2026-10-20T11:04:46Z",
+      "pushed_at": "2026-10-31T12:14:07Z",
       "source": "https://api.github.com/repos/GraphiteEditor/Graphite",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "onlook",
       "category": "Design",
       "repo": "https://github.com/onlook-dev/onlook",
-      "stars": 26962,
+      "stars": 27056,
       "language": "TypeScript",
       "license": "Apache-2.0",
-      "pushed_at": "2026-08-25T01:06:22Z",
+      "pushed_at": "2026-10-21T20:42:29Z",
       "source": "https://api.github.com/repos/onlook-dev/onlook",
-      "discovered_at": "2026-10-20"
-    },
-    {
-      "name": "blueprint",
-      "category": "Design",
-      "repo": "https://github.com/palantir/blueprint",
-      "stars": 22151,
-      "language": "TypeScript",
-      "license": "Apache-2.0",
-      "pushed_at": "2026-10-18T20:53:54Z",
-      "source": "https://api.github.com/repos/palantir/blueprint",
-      "discovered_at": "2026-10-20"
-    },
-    {
-      "name": "mojs",
-      "category": "Design",
-      "repo": "https://github.com/mojs/mojs",
-      "stars": 18821,
-      "language": "CoffeeScript",
-      "license": "MIT",
-      "pushed_at": "2026-07-30T16:54:33Z",
-      "source": "https://api.github.com/repos/mojs/mojs",
-      "discovered_at": "2026-10-20"
-    },
-    {
-      "name": "rea",
-      "category": "Dev tools",
-      "repo": "https://github.com/morluto/rea",
-      "stars": 343899,
-      "language": "TypeScript",
-      "license": "MIT",
-      "pushed_at": "2026-10-20T13:46:04Z",
-      "source": "https://api.github.com/repos/morluto/rea",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "ECC",
       "category": "Dev tools",
       "repo": "https://github.com/affaan-m/ECC",
-      "stars": 284518,
+      "stars": 293689,
       "language": "JavaScript",
       "license": "MIT",
-      "pushed_at": "2026-10-20T03:39:21Z",
+      "pushed_at": "2026-10-30T03:06:42Z",
       "source": "https://api.github.com/repos/affaan-m/ECC",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "ponytail",
       "category": "Dev tools",
       "repo": "https://github.com/DietrichGebert/ponytail",
-      "stars": 168853,
+      "stars": 181256,
       "language": "JavaScript",
       "license": "MIT",
-      "pushed_at": "2026-10-18T01:55:14Z",
+      "pushed_at": "2026-10-29T11:59:31Z",
       "source": "https://api.github.com/repos/DietrichGebert/ponytail",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "graphify",
       "category": "Dev tools",
       "repo": "https://github.com/Graphify-Labs/graphify",
-      "stars": 129657,
+      "stars": 139764,
       "language": "Python",
       "license": "Apache-2.0",
-      "pushed_at": "2026-10-16T17:57:21Z",
+      "pushed_at": "2026-10-30T23:42:18Z",
       "source": "https://api.github.com/repos/Graphify-Labs/graphify",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "puppeteer",
       "category": "Dev tools",
       "repo": "https://github.com/puppeteer/puppeteer",
-      "stars": 95731,
+      "stars": 95774,
       "language": "TypeScript",
       "license": "Apache-2.0",
-      "pushed_at": "2026-10-20T13:05:57Z",
+      "pushed_at": "2026-10-30T15:20:46Z",
       "source": "https://api.github.com/repos/puppeteer/puppeteer",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "OpenHands",
       "category": "Dev tools",
       "repo": "https://github.com/OpenHands/OpenHands",
-      "stars": 91366,
+      "stars": 92327,
       "language": "TypeScript",
       "license": "MIT",
-      "pushed_at": "2026-10-20T13:36:40Z",
+      "pushed_at": "2026-10-31T12:11:14Z",
       "source": "https://api.github.com/repos/OpenHands/OpenHands",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "archify",
       "category": "Dev tools",
       "repo": "https://github.com/tt-a1i/archify",
-      "stars": 86151,
+      "stars": 91985,
       "language": "JavaScript",
-      "license": "MIT",
-      "pushed_at": "2026-10-20T12:04:50Z",
+      "license": "Apache-2.0",
+      "pushed_at": "2026-10-31T06:53:27Z",
       "source": "https://api.github.com/repos/tt-a1i/archify",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
+    },
+    {
+      "name": "rtk",
+      "category": "Dev tools",
+      "repo": "https://github.com/rtk-ai/rtk",
+      "stars": 85119,
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "pushed_at": "2026-10-30T18:07:02Z",
+      "source": "https://api.github.com/repos/rtk-ai/rtk",
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "unsloth",
       "category": "Self-hosting",
       "repo": "https://github.com/unslothai/unsloth",
-      "stars": 78306,
+      "stars": 78849,
       "language": "Python",
       "license": "Apache-2.0",
-      "pushed_at": "2026-10-20T13:45:44Z",
+      "pushed_at": "2026-10-31T12:29:40Z",
       "source": "https://api.github.com/repos/unslothai/unsloth",
-      "discovered_at": "2026-10-20"
-    },
-    {
-      "name": "memos",
-      "category": "Self-hosting",
-      "repo": "https://github.com/usememos/memos",
-      "stars": 63943,
-      "language": "Go",
-      "license": "MIT",
-      "pushed_at": "2026-10-20T13:16:05Z",
-      "source": "https://api.github.com/repos/usememos/memos",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "coolify",
       "category": "Self-hosting",
       "repo": "https://github.com/coollabsio/coolify",
-      "stars": 63272,
+      "stars": 65347,
       "language": "PHP",
       "license": "Apache-2.0",
-      "pushed_at": "2026-10-20T13:02:19Z",
+      "pushed_at": "2026-10-31T07:53:04Z",
       "source": "https://api.github.com/repos/coollabsio/coolify",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
-      "name": "serviette",
+      "name": "memos",
       "category": "Self-hosting",
-      "repo": "https://github.com/pathwaycom/serviette",
-      "stars": 58782,
-      "language": "Python",
+      "repo": "https://github.com/usememos/memos",
+      "stars": 64198,
+      "language": "Go",
       "license": "MIT",
-      "pushed_at": "2026-10-16T10:31:14Z",
-      "source": "https://api.github.com/repos/pathwaycom/serviette",
-      "discovered_at": "2026-10-20"
+      "pushed_at": "2026-10-31T10:42:33Z",
+      "source": "https://api.github.com/repos/usememos/memos",
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "gitea",
       "category": "Self-hosting",
       "repo": "https://github.com/go-gitea/gitea",
-      "stars": 58587,
+      "stars": 58796,
       "language": "Go",
       "license": "MIT",
-      "pushed_at": "2026-10-20T13:04:11Z",
+      "pushed_at": "2026-10-31T12:30:08Z",
       "source": "https://api.github.com/repos/go-gitea/gitea",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
+    },
+    {
+      "name": "serviette",
+      "category": "Self-hosting",
+      "repo": "https://github.com/pathwaycom/serviette",
+      "stars": 58751,
+      "language": "Python",
+      "license": "MIT",
+      "pushed_at": "2026-10-16T10:31:14Z",
+      "source": "https://api.github.com/repos/pathwaycom/serviette",
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "appwrite",
       "category": "Self-hosting",
       "repo": "https://github.com/appwrite/appwrite",
-      "stars": 57738,
+      "stars": 57805,
       "language": "TypeScript",
       "license": "BSD-3-Clause",
-      "pushed_at": "2026-10-20T13:46:26Z",
+      "pushed_at": "2026-10-31T10:42:42Z",
       "source": "https://api.github.com/repos/appwrite/appwrite",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "nanobot",
       "category": "Self-hosting",
       "repo": "https://github.com/HKUDS/nanobot",
-      "stars": 49213,
+      "stars": 49698,
       "language": "Python",
       "license": "MIT",
-      "pushed_at": "2026-10-20T13:42:06Z",
+      "pushed_at": "2026-10-31T03:55:14Z",
       "source": "https://api.github.com/repos/HKUDS/nanobot",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "appium",
       "category": "Testing",
       "repo": "https://github.com/appium/appium",
-      "stars": 22110,
+      "stars": 22167,
       "language": "TypeScript",
       "license": "Apache-2.0",
-      "pushed_at": "2026-10-20T13:43:19Z",
+      "pushed_at": "2026-10-31T05:35:32Z",
       "source": "https://api.github.com/repos/appium/appium",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "keploy",
       "category": "Testing",
       "repo": "https://github.com/keploy/keploy",
-      "stars": 18658,
+      "stars": 18937,
       "language": "Go",
       "license": "Apache-2.0",
-      "pushed_at": "2026-10-20T13:45:25Z",
+      "pushed_at": "2026-10-31T12:32:18Z",
       "source": "https://api.github.com/repos/keploy/keploy",
-      "discovered_at": "2026-10-20"
-    },
-    {
-      "name": "mockito",
-      "category": "Testing",
-      "repo": "https://github.com/mockito/mockito",
-      "stars": 15454,
-      "language": "Java",
-      "license": "MIT",
-      "pushed_at": "2026-10-20T00:06:57Z",
-      "source": "https://api.github.com/repos/mockito/mockito",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "artemis",
       "category": "Testing",
       "repo": "https://github.com/google/artemis",
-      "stars": 13180,
+      "stars": 15880,
       "language": "Python",
       "license": "Apache-2.0",
       "pushed_at": "2026-10-01T21:37:15Z",
       "source": "https://api.github.com/repos/google/artemis",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
+    },
+    {
+      "name": "mockito",
+      "category": "Testing",
+      "repo": "https://github.com/mockito/mockito",
+      "stars": 15452,
+      "language": "Java",
+      "license": "MIT",
+      "pushed_at": "2026-10-29T18:03:01Z",
+      "source": "https://api.github.com/repos/mockito/mockito",
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "SeleniumBase",
       "category": "Testing",
       "repo": "https://github.com/seleniumbase/SeleniumBase",
-      "stars": 13101,
+      "stars": 13211,
       "language": "Python",
       "license": "MIT",
-      "pushed_at": "2026-10-19T19:17:31Z",
+      "pushed_at": "2026-10-29T04:49:44Z",
       "source": "https://api.github.com/repos/seleniumbase/SeleniumBase",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "Detox",
       "category": "Testing",
       "repo": "https://github.com/wix/Detox",
-      "stars": 12040,
+      "stars": 12048,
       "language": "JavaScript",
       "license": "MIT",
-      "pushed_at": "2026-10-19T20:05:12Z",
+      "pushed_at": "2026-10-28T07:36:46Z",
       "source": "https://api.github.com/repos/wix/Detox",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "testcafe",
       "category": "Testing",
       "repo": "https://github.com/DevExpress/testcafe",
-      "stars": 9896,
+      "stars": 9894,
       "language": "JavaScript",
       "license": "MIT",
-      "pushed_at": "2026-10-07T12:55:41Z",
+      "pushed_at": "2026-10-30T08:45:03Z",
       "source": "https://api.github.com/repos/DevExpress/testcafe",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "flutter",
       "category": "Web",
       "repo": "https://github.com/flutter/flutter",
-      "stars": 180310,
+      "stars": 180790,
       "language": "Dart",
       "license": "BSD-3-Clause",
-      "pushed_at": "2026-10-19T23:55:11Z",
+      "pushed_at": "2026-10-31T06:31:14Z",
       "source": "https://api.github.com/repos/flutter/flutter",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "angular",
       "category": "Web",
       "repo": "https://github.com/angular/angular",
-      "stars": 101110,
+      "stars": 101084,
       "language": "TypeScript",
       "license": "MIT",
-      "pushed_at": "2026-10-20T13:15:57Z",
+      "pushed_at": "2026-10-30T22:50:38Z",
       "source": "https://api.github.com/repos/angular/angular",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "flask",
       "category": "Web",
       "repo": "https://github.com/pallets/flask",
-      "stars": 74970,
+      "stars": 74995,
       "language": "Python",
       "license": "BSD-3-Clause",
-      "pushed_at": "2026-10-07T14:02:59Z",
+      "pushed_at": "2026-10-30T15:05:22Z",
       "source": "https://api.github.com/repos/pallets/flask",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "expo",
       "category": "Web",
       "repo": "https://github.com/expo/expo",
-      "stars": 52873,
+      "stars": 53246,
       "language": "TypeScript",
       "license": "MIT",
-      "pushed_at": "2026-10-20T13:46:20Z",
+      "pushed_at": "2026-10-31T12:14:36Z",
       "source": "https://api.github.com/repos/expo/expo",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "go-zero",
       "category": "Web",
       "repo": "https://github.com/zeromicro/go-zero",
-      "stars": 33389,
+      "stars": 33418,
       "language": "Go",
       "license": "MIT",
-      "pushed_at": "2026-10-19T19:54:06Z",
+      "pushed_at": "2026-10-31T11:34:53Z",
       "source": "https://api.github.com/repos/zeromicro/go-zero",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "yew",
       "category": "Web",
       "repo": "https://github.com/yewstack/yew",
-      "stars": 32828,
+      "stars": 32842,
       "language": "Rust",
       "license": "Apache-2.0",
-      "pushed_at": "2026-10-18T13:35:38Z",
+      "pushed_at": "2026-10-30T03:20:20Z",
       "source": "https://api.github.com/repos/yewstack/yew",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     },
     {
       "name": "echo",
       "category": "Web",
       "repo": "https://github.com/labstack/echo",
-      "stars": 32775,
+      "stars": 32787,
       "language": "Go",
       "license": "MIT",
-      "pushed_at": "2026-10-12T15:06:45Z",
+      "pushed_at": "2026-10-30T15:04:26Z",
       "source": "https://api.github.com/repos/labstack/echo",
-      "discovered_at": "2026-10-20"
+      "discovered_at": "2026-10-31"
     }
   ]
 }
