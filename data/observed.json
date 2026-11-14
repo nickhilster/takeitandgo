@@ -7,12 +7,12 @@
       "html_url": "https://github.com/BurntSushi/ripgrep",
       "archived": false,
       "disabled": false,
-      "stars": 69269,
-      "open_issues": 219,
-      "pushed_at": "2026-08-04T13:59:44Z",
+      "stars": 69941,
+      "open_issues": 226,
+      "pushed_at": "2026-11-09T20:53:12Z",
       "license": "Unlicense",
       "default_branch": "master",
-      "last_verified": "2026-10-20T13:44:35.993Z"
+      "last_verified": "2026-11-14T08:47:04.401Z"
     },
     "junegunn/fzf": {
       "name": "junegunn/fzf",
@@ -20,12 +20,12 @@
       "html_url": "https://github.com/junegunn/fzf",
       "archived": false,
       "disabled": false,
-      "stars": 83689,
-      "open_issues": 334,
-      "pushed_at": "2026-10-17T02:11:02Z",
+      "stars": 84193,
+      "open_issues": 333,
+      "pushed_at": "2026-11-12T01:51:46Z",
       "license": "MIT",
       "default_branch": "master",
-      "last_verified": "2026-10-20T13:44:36.498Z"
+      "last_verified": "2026-11-14T08:47:04.686Z"
     },
     "bigskysoftware/htmx": {
       "name": "bigskysoftware/htmx",
@@ -33,12 +33,12 @@
       "html_url": "https://github.com/bigskysoftware/htmx",
       "archived": false,
       "disabled": false,
-      "stars": 49578,
-      "open_issues": 302,
-      "pushed_at": "2026-10-20T10:49:49Z",
+      "stars": 49639,
+      "open_issues": 314,
+      "pushed_at": "2026-11-13T12:49:56Z",
       "license": "NOASSERTION",
       "default_branch": "master",
-      "last_verified": "2026-10-20T13:44:36.909Z"
+      "last_verified": "2026-11-14T08:47:04.955Z"
     },
     "colinhacks/zod": {
       "name": "colinhacks/zod",
@@ -46,12 +46,12 @@
       "html_url": "https://github.com/colinhacks/zod",
       "archived": false,
       "disabled": false,
-      "stars": 44162,
-      "open_issues": 93,
-      "pushed_at": "2026-10-19T22:46:10Z",
+      "stars": 44325,
+      "open_issues": 121,
+      "pushed_at": "2026-11-13T20:30:02Z",
       "license": "MIT",
       "default_branch": "main",
-      "last_verified": "2026-10-20T13:44:37.213Z"
+      "last_verified": "2026-11-14T08:47:05.188Z"
     },
     "withastro/astro": {
       "name": "withastro/astro",
@@ -59,12 +59,12 @@
       "html_url": "https://github.com/withastro/astro",
       "archived": false,
       "disabled": false,
-      "stars": 63345,
-      "open_issues": 115,
-      "pushed_at": "2026-10-20T13:15:13Z",
+      "stars": 63939,
+      "open_issues": 108,
+      "pushed_at": "2026-11-14T00:13:11Z",
       "license": "NOASSERTION",
       "default_branch": "main",
-      "last_verified": "2026-10-20T13:44:37.624Z"
+      "last_verified": "2026-11-14T08:47:05.441Z"
     },
     "microsoft/playwright": {
       "name": "microsoft/playwright",
@@ -72,12 +72,12 @@
       "html_url": "https://github.com/microsoft/playwright",
       "archived": false,
       "disabled": false,
-      "stars": 98142,
-      "open_issues": 180,
-      "pushed_at": "2026-10-20T02:59:45Z",
+      "stars": 100130,
+      "open_issues": 34,
+      "pushed_at": "2026-11-14T05:42:56Z",
       "license": "Apache-2.0",
       "default_branch": "main",
-      "last_verified": "2026-10-20T13:44:38.026Z"
+      "last_verified": "2026-11-14T08:47:05.667Z"
     },
     "duckdb/duckdb": {
       "name": "duckdb/duckdb",
@@ -85,12 +85,12 @@
       "html_url": "https://github.com/duckdb/duckdb",
       "archived": false,
       "disabled": false,
-      "stars": 42294,
-      "open_issues": 900,
-      "pushed_at": "2026-10-20T13:29:02Z",
+      "stars": 43056,
+      "open_issues": 1210,
+      "pushed_at": "2026-11-13T20:45:13Z",
       "license": "MIT",
       "default_branch": "main",
-      "last_verified": "2026-10-20T13:44:38.443Z"
+      "last_verified": "2026-11-14T08:47:05.926Z"
     },
     "meilisearch/meilisearch": {
       "name": "meilisearch/meilisearch",
@@ -98,12 +98,12 @@
       "html_url": "https://github.com/meilisearch/meilisearch",
       "archived": false,
       "disabled": false,
-      "stars": 59617,
+      "stars": 59858,
       "open_issues": 320,
-      "pushed_at": "2026-10-20T09:36:44Z",
+      "pushed_at": "2026-11-12T18:59:03Z",
       "license": "NOASSERTION",
       "default_branch": "main",
-      "last_verified": "2026-10-20T13:44:38.752Z"
+      "last_verified": "2026-11-14T08:47:06.183Z"
     },
     "caddyserver/caddy": {
       "name": "caddyserver/caddy",
@@ -111,12 +111,12 @@
       "html_url": "https://github.com/caddyserver/caddy",
       "archived": false,
       "disabled": false,
-      "stars": 78183,
-      "open_issues": 292,
-      "pushed_at": "2026-10-20T07:11:31Z",
+      "stars": 79029,
+      "open_issues": 275,
+      "pushed_at": "2026-11-14T06:25:06Z",
       "license": "Apache-2.0",
       "default_branch": "master",
-      "last_verified": "2026-10-20T13:44:39.058Z"
+      "last_verified": "2026-11-14T08:47:06.430Z"
     },
     "louislam/uptime-kuma": {
       "name": "louislam/uptime-kuma",
@@ -124,12 +124,12 @@
       "html_url": "https://github.com/louislam/uptime-kuma",
       "archived": false,
       "disabled": false,
-      "stars": 92666,
-      "open_issues": 846,
-      "pushed_at": "2026-10-20T12:15:53Z",
+      "stars": 93983,
+      "open_issues": 855,
+      "pushed_at": "2026-11-14T00:04:41Z",
       "license": "MIT",
       "default_branch": "master",
-      "last_verified": "2026-10-20T13:44:39.290Z"
+      "last_verified": "2026-11-14T08:47:06.650Z"
     },
     "excalidraw/excalidraw": {
       "name": "excalidraw/excalidraw",
@@ -137,12 +137,12 @@
       "html_url": "https://github.com/excalidraw/excalidraw",
       "archived": false,
       "disabled": false,
-      "stars": 134253,
-      "open_issues": 3356,
-      "pushed_at": "2026-10-20T10:12:20Z",
+      "stars": 135665,
+      "open_issues": 3534,
+      "pushed_at": "2026-11-13T16:18:43Z",
       "license": "MIT",
       "default_branch": "master",
-      "last_verified": "2026-10-20T13:44:39.672Z"
+      "last_verified": "2026-11-14T08:47:06.942Z"
     },
     "biomejs/biome": {
       "name": "biomejs/biome",
@@ -150,12 +150,13 @@
       "html_url": "https://github.com/biomejs/biome",
       "archived": false,
       "disabled": false,
-      "stars": 25981,
-      "open_issues": 470,
-      "pushed_at": "2026-10-20T13:03:47Z",
+      "stars": 26101,
+      "open_issues": 532,
+      "pushed_at": "2026-11-14T00:58:43Z",
       "license": "Apache-2.0",
       "default_branch": "main",
-      "last_verified": "2026-10-20T13:44:39.990Z"
+      "last_verified": "2026-11-14T08:47:07.197Z"
     }
-  }
+  },
+  "failures": {}
 }
